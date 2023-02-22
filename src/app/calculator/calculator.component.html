@@ -1,0 +1,37 @@
+<div>
+  Calculator
+</div>
+
+  <div>Select type of material</div>
+  <div>
+    <select [(ngModel)]="typeFence">
+      <option value="">Select</option>
+      <option value="1">Wood</option>
+      <option value="2">Vinyl</option>
+      <option value="3">Aluminium</option>
+      <option value="4">Steel</option>
+      <option value="5">Chain link</option>
+    </select>
+</div>
+
+<div>Select model of fence</div>
+<div>
+  <select [(ngModel)]="modelFence">
+    <option value="">Select</option>
+    <option value="1">Model A</option>
+    <option value="2">Model B</option>
+    <option value="3">Model C</option>
+    <option value="4">Model D</option>
+    <option value="5">Model E</option>
+  </select>
+</div>
+
+<div>Height</div>
+<div><input type="number" [(ngModel)]="heightFence" /> </div>
+
+<div>long</div>
+<div><input type="number" [(ngModel)]="longFence"/></div>
+
+
+
+<button (click)="budget()">Budget</button>
