@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+ angular_server:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  expose:
+   - 81:81

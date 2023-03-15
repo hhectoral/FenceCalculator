@@ -2,3 +2,56 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* Material design text field */
+mat-form-field,
+.form__group {
+    float: left;
+    position: relative;
+    padding: 15px 0 0;
+    width: 48%;
+    margin: 10px 1% 0;
+}
+mat-form-field.formGroup50,
+.form__group.formGroup50 {
+    width: 23%;
+}
+mat-form-field.formGroup100,
+.form__group.formGroup100 {
+    width: 98%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 98%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+    outline: 0;
+    font-size: 16px;
+    color: #212121;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    text-indent: 6px;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 14px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__field:focus~.form__label {
+    color: #009788;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #009788;
+}
+
+/* ENDS Material design inputs */

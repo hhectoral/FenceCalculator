@@ -1,37 +1,48 @@
-<div>
-  Calculator
-</div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Fence calculator</mat-card-title>
+</mat-card-header>
 
-  <div>Select type of material</div>
-  <div>
-    <select [(ngModel)]="typeFence">
-      <option value="">Select</option>
-      <option value="1">Wood</option>
-      <option value="2">Vinyl</option>
-      <option value="3">Aluminium</option>
-      <option value="4">Steel</option>
-      <option value="5">Chain link</option>
-    </select>
-</div>
+<mat-card-content>
+  <mat-form-field appearance="fill" class="formGroup100">
+    <mat-label>Select type of material</mat-label>
+    <mat-select [(ngModel)]="typeFence">
+      <mat-option value="1">Wood</mat-option>
+      <mat-option value="2">Vinyl</mat-option>
+      <mat-option value="3">Aluminium</mat-option>
+      <mat-option value="4">Steel</mat-option>
+      <mat-option value="5">Chain link</mat-option>
+    </mat-select>
+  </mat-form-field>
 
-<div>Select model of fence</div>
-<div>
-  <select [(ngModel)]="modelFence">
-    <option value="">Select</option>
-    <option value="1">Model A</option>
-    <option value="2">Model B</option>
-    <option value="3">Model C</option>
-    <option value="4">Model D</option>
-    <option value="5">Model E</option>
-  </select>
-</div>
+  <mat-form-field appearance="fill" class="formGroup100">
 
-<div>Height</div>
-<div><input type="number" [(ngModel)]="heightFence" /> </div>
+    <mat-label>Select model of fence</mat-label>
+    <mat-select [(ngModel)]="modelFence">
+      <mat-option value="1">Model A</mat-option>
+      <mat-option value="2">Model B</mat-option>
+      <mat-option value="3">Model C</mat-option>
+      <mat-option value="4">Model D</mat-option>
+      <mat-option value="5">Model E</mat-option>
+    </mat-select>
+  </mat-form-field>
 
-<div>long</div>
-<div><input type="number" [(ngModel)]="longFence"/></div>
+  <mat-form-field appearance="fill" class="formGroup100">
+    <mat-label>Height</mat-label>
+  <input type="number" [(ngModel)]="heightFence" matInput/>
+  <mat-hint>The units are in meters</mat-hint>
+  </mat-form-field>
 
+  <mat-form-field appearance="fill" class="formGroup100">
+  <mat-label>Long</mat-label>
+  <input type="number" [(ngModel)]="longFence" matInput/>
+  <mat-hint>The units are in meters</mat-hint>
+  </mat-form-field>
 
+</mat-card-content>
 
-<button (click)="budget()">Budget</button>
+<mat-card-actions align="end">
+  <button (click)="budget()" mat-raised-button>Budget</button>
+</mat-card-actions>
+
+</mat-card>

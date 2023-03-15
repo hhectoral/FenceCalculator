@@ -1,0 +1,10 @@
+FROM nginx:alpine
+
+#ngix Conf
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
+#Relase site
+COPY . /usr/share/nginx/html
+
+#Ports
+EXPOSE 81

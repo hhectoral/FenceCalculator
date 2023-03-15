@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 100%;
+}
+
+.example-header-image {
+  background-image: url('/assets/img/IconQr.jpg');
+  background-size: cover;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+  margin: 20dp;
+}
